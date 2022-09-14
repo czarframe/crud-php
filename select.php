@@ -17,6 +17,7 @@
               <td>Marca</td>
               <td>Estoque</td>
               <td>Preço</td>
+              <td>Excluir</td>
           </tr>
           <?php
             require('conexao.php');
@@ -29,7 +30,10 @@
             <td><?=$produto['marca']?></td>
             <td><?=$produto['estoque']?></td>
             <td><?=$produto['preco']?></td>
+            
+            <td><a href="delete.php?id=<?=$produto['id']?>" class="btn btn-danger">Excluir</a></td>
           <?php endwhile; ?>
+          
         </table>
       </div>
       <div class="card-footer">
@@ -38,4 +42,3 @@
     </div>
   </body>
 </html>
-
