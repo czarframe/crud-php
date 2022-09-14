@@ -18,6 +18,7 @@
               <td>Estoque</td>
               <td>Preço</td>
               <td>Excluir</td>
+              <td>Editar</td>
           </tr>
           <?php
             require('conexao.php');
@@ -32,6 +33,9 @@
             <td><?=$produto['preco']?></td>
             
             <td><a href="delete.php?id=<?=$produto['id']?>" class="btn btn-danger">Excluir</a></td>
+
+            <td><a href="editar.php?id=<?=$produto['id']?>" class="btn btn-info">Editar</a></td>
+            
           <?php endwhile; ?>
           
         </table>
