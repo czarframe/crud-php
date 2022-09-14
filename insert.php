@@ -64,6 +64,7 @@ if ($erros == 0)
 
     <?php if ($insert): ?>
         <div class="alert alert-success" role="alert">Produto cadastrado!</div>
+        <a href="select.php" class="btn btn-success">Lista de Produtos</a>
     <?php
 else: ?>
         <div class="alert alert-danger" role="alert">Erro!</div>
